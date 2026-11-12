@@ -1,0 +1,273 @@
+/* ═══════════════════════════════════════════════════════════
+   Bharti Medical Corporation — Products Page Stylesheet
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── PAGE HERO ────────────────────────────────────────── */
+.page-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a6e 100%);
+  padding: 3.5rem 0;
+  color: white;
+}
+.page-hero__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.page-hero__title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  color: white;
+  margin-bottom: .6rem;
+}
+.page-hero__desc {
+  color: rgba(255,255,255,.72);
+  font-size: 1rem;
+  max-width: 540px;
+}
+.page-hero__stats {
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+.phs { text-align: center; }
+.phs span {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+}
+.phs p { font-size: .8rem; color: rgba(255,255,255,.65); margin-top: .25rem; }
+
+/* ── FILTER BAR ───────────────────────────────────────── */
+.filter-bar {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  z-index: 90;
+  position: sticky;
+  top: 61px;
+}
+.filter-bar__inner {
+  display: flex;
+  gap: .35rem;
+  overflow-x: auto;
+  padding: .75rem 0;
+  scrollbar-width: none;
+}
+.filter-bar__inner::-webkit-scrollbar { display: none; }
+.filter-btn {
+  flex-shrink: 0;
+  padding: .45rem 1.1rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  font-size: .82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.filter-btn:hover { border-color: var(--primary); color: var(--primary); }
+.filter-btn.active { background: var(--primary); border-color: var(--primary); color: white; }
+
+/* ── PRODUCTS PAGE LAYOUT ─────────────────────────────── */
+.products-page { padding: 3rem 0 4rem; background: var(--bg); }
+
+/* ── SECTION ──────────────────────────────────────────── */
+.prod-section {
+  margin-bottom: 3.5rem;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  scroll-margin-top: 120px;
+}
+.prod-section.hidden { display: none; }
+
+.prod-section__header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.prod-section__icon {
+  width: 56px; height: 56px; flex-shrink: 0;
+  background: color-mix(in srgb, var(--sc) 12%, white);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  color: var(--sc);
+}
+.prod-section__header h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: .2rem;
+}
+.prod-section__header p {
+  font-size: .86rem;
+  color: var(--text-muted);
+}
+.prod-section__count {
+  margin-left: auto;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: .78rem;
+  font-weight: 700;
+  padding: .35rem .85rem;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+/* ── SUB-SECTION ──────────────────────────────────────── */
+.prod-subsection { margin-bottom: 2rem; }
+.prod-subsection:last-child { margin-bottom: 0; }
+.brand-label {
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.brand-label i { color: var(--primary); }
+
+/* ── PRODUCT GRID ─────────────────────────────────────── */
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.prod-grid--2col { grid-template-columns: repeat(2, 1fr); }
+
+/* ── PRODUCT CARD ─────────────────────────────────────── */
+.prod-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.prod-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+.prod-card.filtered-out { display: none; }
+
+.prod-card__img {
+  height: 100px;
+  background: linear-gradient(135deg,
+    color-mix(in srgb, var(--pc) 15%, white),
+    color-mix(in srgb, var(--pc) 25%, white));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  color: var(--pc);
+  border-bottom: 1px solid var(--border);
+}
+
+.prod-card__body {
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.prod-card__badges {
+  display: flex;
+  gap: .4rem;
+  flex-wrap: wrap;
+  margin-bottom: .65rem;
+}
+
+.badge {
+  font-size: .68rem;
+  font-weight: 700;
+  padding: .2rem .6rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.badge--refurb  { background: #fef3c7; color: #92400e; }
+.badge--new     { background: #d1fae5; color: #065f46; }
+.badge--auth    { background: #e0f2fe; color: #075985; }
+.badge--brand   { background: var(--primary-light); color: var(--primary); }
+
+.prod-card__body h4 {
+  font-size: .95rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  color: var(--text);
+  line-height: 1.3;
+}
+.prod-card__body p {
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: .9rem;
+}
+
+.prod-enquire-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--primary);
+  transition: var(--transition);
+  margin-top: auto;
+}
+.prod-enquire-btn:hover { gap: .6rem; color: var(--primary-dark); }
+
+/* ── CTA BAND ─────────────────────────────────────────── */
+.cta-band {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  padding: 3rem 0;
+}
+.cta-band__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-band h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: .4rem;
+}
+.cta-band p { color: rgba(255,255,255,.82); font-size: .95rem; }
+.cta-band .btn--primary {
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 4px 15px rgba(0,0,0,.2);
+}
+.cta-band .btn--primary:hover { background: #f0f4ff; }
+
+/* ── RESPONSIVE ───────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .prod-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .prod-grid, .prod-grid--2col { grid-template-columns: 1fr; }
+  .prod-section__count { margin-left: 0; }
+  .page-hero__stats { width: 100%; justify-content: center; }
+  .cta-band__inner { flex-direction: column; text-align: center; }
+}

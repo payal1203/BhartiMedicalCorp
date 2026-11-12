@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bharti Medical Corporation — Complete catalog of refurbished and new medical equipment including ventilators, patient monitors, defibrillators, anesthesia machines, laparoscopy systems and more." />
+  <title>Products | Bharti Medical Corporation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/products.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span><i class="fas fa-phone-alt"></i> +91 88269 14364</span>
+        <span><i class="fas fa-envelope"></i> bmcorpdelhi@gmail.com</span>
+        <span><i class="fas fa-clock"></i> Mon–Sat: 9:00 AM – 6:00 PM</span>
+      </div>
+      <div class="topbar__right">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+        <div class="logo-text">
+          <div style="line-height:1.1;"><span class="logo-primary">Bharti</span> <span class="logo-accent">Medical</span></div>
+          <div style="font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--text-muted);font-weight:700;">Corporation</div>
+        </div>
+      </a>
+      <nav class="navbar__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="products.html" class="active">Products <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="#ventilators"><i class="fas fa-lungs"></i> Ventilators</a>
+            <a href="#monitors"><i class="fas fa-heart-pulse"></i> Patient Monitors</a>
+            <a href="#anesthesia"><i class="fas fa-procedures"></i> Anesthesia Machines</a>
+            <a href="#defibrillators"><i class="fas fa-bolt"></i> Defibrillators</a>
+            <a href="#iabp"><i class="fas fa-heart"></i> IABP Machines</a>
+            <a href="#laparoscopy"><i class="fas fa-microscope"></i> Laparoscopy Systems</a>
+            <a href="#pumps"><i class="fas fa-syringe"></i> Syringe & Infusion Pumps</a>
+            <a href="#accessories"><i class="fas fa-plug"></i> Accessories</a>
+          </div>
+        </div>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <a href="index.html#contact" class="btn btn--outline">Get a Quote</a>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <div>
+        <div class="hero__badge" style="display:inline-flex;margin-bottom:.75rem;">
+          <i class="fas fa-recycle"></i> Refurbished &amp; New Medical Equipment
+        </div>
+        <h1 class="page-hero__title">Our Product Catalog</h1>
+        <p class="page-hero__desc">50+ certified medical devices across 8 categories. All refurbished equipment is tested, serviced, and certified before delivery.</p>
+      </div>
+      <div class="page-hero__stats">
+        <div class="phs"><span>50+</span><p>Products</p></div>
+        <div class="phs"><span>8</span><p>Categories</p></div>
+        <div class="phs"><span>10+</span><p>Brands</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <div class="filter-bar sticky-filter" id="filterBar">
+    <div class="container filter-bar__inner">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="ventilators">Ventilators</button>
+      <button class="filter-btn" data-filter="monitors">Patient Monitors</button>
+      <button class="filter-btn" data-filter="anesthesia">Anesthesia</button>
+      <button class="filter-btn" data-filter="defibrillators">Defibrillators</button>
+      <button class="filter-btn" data-filter="iabp">IABP</button>
+      <button class="filter-btn" data-filter="laparoscopy">Laparoscopy</button>
+      <button class="filter-btn" data-filter="pumps">Pumps</button>
+      <button class="filter-btn" data-filter="accessories">Accessories</button>
+    </div>
+  </div>
+
+  <!-- ═══════ PRODUCTS CONTENT ═══════ -->
+  <main class="products-page">
+    <div class="container">
+
+      <!-- ── VENTILATORS ─────────────────────── -->
+      <section class="prod-section" id="ventilators" data-section="ventilators">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+          <div>
+            <h2>Ventilators</h2>
+            <p>Transport, emergency, ICU and neonatal ventilators from world-leading brands</p>
+          </div>
+          <span class="prod-section__count">17 Products</span>
+        </div>
+
+        <div class="prod-subsection">
+          <h3 class="brand-label"><i class="fas fa-tag"></i> Dräger — Oxylog &amp; Elisée Series</h3>
+          <div class="prod-grid">
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+                <h4>Oxylog 3000 Ventilator</h4>
+                <p>Transport ventilator with automatic altitude compensation, wide ventilation modes, AutoFlow, and advanced data export. Ready for paediatric patients.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+                <h4>Oxylog 2000 Plus Ventilator</h4>
+                <p>Supports daily life-saving challenges — invasive or non-invasive. Essential ventilation tools at your fingertips for any emergency setting.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">ResMed</span></div>
+                <h4>Elisée 350 Ventilator</h4>
+                <p>High quality turbine-driven ventilator for emergency and critical care. Compact and light — delivers ICU-level ventilation performance.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">ResMed</span></div>
+                <h4>Elisée 250 Ventilator</h4>
+                <p>Transport and emergency ventilator with intuitive interface, incorporating essential features for ventilation and monitoring.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">ResMed</span></div>
+                <h4>Elisée 150 Ventilator</h4>
+                <p>Portable ventilation with rechargeable battery, large touchscreen, pressure &amp; volume ventilation, essential alarms, and therapy monitoring.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#3b82f6;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Vyaire</span></div>
+                <h4>LTV 1200 Ventilator</h4>
+                <p>Versatile ventilator for critical care, emergency, patient transport and long-term care. Offers invasive and non-invasive modes including Pressure Control, Volume Control and more.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="prod-subsection">
+          <h3 class="brand-label"><i class="fas fa-tag"></i> Maquet — SERVO Series</h3>
+          <div class="prod-grid">
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#6366f1;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Maquet</span></div>
+                <h4>Servo-i Ventilator</h4>
+                <p>Handles neonatal, pediatric and adult patients. Manages acute phases of respiratory distress through recovery and weaning with outstanding gentleness.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#6366f1;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Maquet</span></div>
+                <h4>SERVO-s Ventilator</h4>
+                <p>Treats and monitors pediatric to adult patients with respiratory failure or insufficiency.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#6366f1;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Maquet</span></div>
+                <h4>SERVO-U Ventilator</h4>
+                <p>Intensive care ventilator with tailored ventilation modes — controlled, supported, non-invasive, and spontaneous breathing, while protecting lung integrity.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="prod-subsection">
+          <h3 class="brand-label"><i class="fas fa-tag"></i> Dräger — Evita ICU Series</h3>
+          <div class="prod-grid">
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+                <h4>Evita XL Ventilator</h4>
+                <p>Feature-rich ICU ventilator for optimal comprehensive ventilation from implementation to weaning. Responds quickly to individual patient requirements.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+                <h4>Evita 4 Ventilator</h4>
+                <p>ICU ventilator with functional touch screen providing settings, patient measurements and advanced trending. Designed for demanding ICU environments.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+                <h4>Evita 2 Dura Ventilator</h4>
+                <p>Advanced ICU ventilator with highly responsive flow trigger, open breathing system, and colour screen for enhanced monitoring. Custom built to order.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-baby"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+                <h4>Babylog VN500 Ventilator</h4>
+                <p>Neonatal and pediatric ventilator for patients from 0.4 kg to 20 kg. Offers mandatory and spontaneous breathing modes for temporary or long-term respiratory support.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="prod-subsection">
+          <h3 class="brand-label"><i class="fas fa-tag"></i> Philips &amp; GE</h3>
+          <div class="prod-grid">
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#2563eb;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+                <h4>Philips V60 Ventilator</h4>
+                <p>Microprocessor-controlled BiPAP ventilatory assist system providing NPPV and invasive support for spontaneously breathing adult and pediatric patients.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#16a34a;"><i class="fas fa-baby"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">GE / SLE</span></div>
+                <h4>SLE 5000 Ventilator</h4>
+                <p>High resolution colour touch-screen interface to all ventilator controls, with advanced features including trends and dynamic loops.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#16a34a;"><i class="fas fa-baby"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">GE / SLE</span></div>
+                <h4>SLE 2000 Ventilator</h4>
+                <p>Designed for neonatal and infant patients. Delivers CPAP, CMV, PTV or SIMV with exceptional pneumatic performance via patented valveless system.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="prod-card" data-cat="ventilators">
+              <div class="prod-card__img" style="--pc:#16a34a;"><i class="fas fa-lungs"></i></div>
+              <div class="prod-card__body">
+                <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">GE</span></div>
+                <h4>Engstrom Carestation</h4>
+                <p>Critical care respiratory carestation for NICU, Pediatric and Adult ICU with GE's FRC INview and SpiroDynamics technologies for FRC measurement.</p>
+                <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PATIENT MONITORS ────────────────── -->
+      <section class="prod-section" id="monitors" data-section="monitors">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#10b981;"><i class="fas fa-heart-pulse"></i></div>
+          <div>
+            <h2>Patient Monitors</h2>
+            <p>Bedside and portable patient monitoring systems for all care environments</p>
+          </div>
+          <span class="prod-section__count">6 Products</span>
+        </div>
+        <div class="prod-grid">
+
+          <div class="prod-card" data-cat="monitors">
+            <div class="prod-card__img" style="--pc:#10b981;"><i class="fas fa-heart-pulse"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips IntelliVue MP30</h4>
+              <p>Powerful monitoring in a compact package for immediate care, special procedures, lower acuity and patient transfer. Display: 10.4". Weight: 13 lbs.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="monitors">
+            <div class="prod-card__img" style="--pc:#10b981;"><i class="fas fa-heart-pulse"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips IntelliVue MP20</h4>
+              <p>Essential measurements in a compact package for immediate care, special procedures and patient transfer. Display: 10.4". Weight: 13 lbs.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="monitors">
+            <div class="prod-card__img" style="--pc:#10b981;"><i class="fas fa-heart-pulse"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips IntelliVue MP50</h4>
+              <p>Portable with measurement flexibility for intermediate care. 12" color SVGA display with 4 or 6 waveforms — bright and easy to read.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="monitors">
+            <div class="prod-card__img" style="--pc:#10b981;"><i class="fas fa-heart-pulse"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips IntelliVue MP70</h4>
+              <p>Monitors variety of parameters on flexible screen configuration. Two slots for Multi-Measurement Modules including anesthesia, critical, cardiac, neonatal care. Display: 15".</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="monitors">
+            <div class="prod-card__img" style="--pc:#10b981;"><i class="fas fa-heart-pulse"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips IntelliVue MP5</h4>
+              <p>Bedside patient monitor in compact, rugged housing serving a wide range of care environments. Display: 8.4". Delivers IntelliVue monitoring power and functionality.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="monitors">
+            <div class="prod-card__img" style="--pc:#059669;"><i class="fas fa-heart-pulse"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--new">New</span><span class="badge badge--auth">Authorised Dealer</span></div>
+              <h4>Common Star 8000</h4>
+              <p>Reliable medical device for efficiently tracking vital signs. User-friendly features ensure accurate measurements, real-time data display and seamless integration.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── ANESTHESIA ──────────────────────── -->
+      <section class="prod-section" id="anesthesia" data-section="anesthesia">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#0891b2;"><i class="fas fa-procedures"></i></div>
+          <div>
+            <h2>Anesthesia Machines</h2>
+            <p>GE and Dräger anesthesia workstations for ICU and OR environments</p>
+          </div>
+          <span class="prod-section__count">4 Products</span>
+        </div>
+        <div class="prod-grid">
+
+          <div class="prod-card" data-cat="anesthesia">
+            <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-procedures"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">GE</span></div>
+              <h4>GE Aestiva/5 Anesthesia Machine</h4>
+              <p>Integrated breathing circuit for simplified cable management. Smart sensors provide uninterrupted communication between breathing circuit and SmartVent ventilator.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="anesthesia">
+            <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-procedures"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">GE</span></div>
+              <h4>GE Aespire View Anesthesia</h4>
+              <p>Compact and durable with 12" ventilation display. Offers both anesthesia gases and ventilation simultaneously using GE SmartVent 7900 system.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="anesthesia">
+            <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-procedures"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">GE</span></div>
+              <h4>GE Aespire S5 Anesthesia</h4>
+              <p>Features AdvancedBreathing System (ABS™). Fewer parts reduce leaks — fully autoclavable. One step mechanical bag to vent switch requires no electronics.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="anesthesia">
+            <div class="prod-card__img" style="--pc:#0891b2;"><i class="fas fa-procedures"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Dräger</span></div>
+              <h4>Dräger Fabius GS Premium</h4>
+              <p>Simple, efficient anaesthesia workstation with modular architecture and wide range of ventilation capabilities. Customisable to your exact needs.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── DEFIBRILLATORS ─────────────────── -->
+      <section class="prod-section" id="defibrillators" data-section="defibrillators">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#ef4444;"><i class="fas fa-bolt"></i></div>
+          <div>
+            <h2>Defibrillators</h2>
+            <p>Portable and advanced defibrillator/monitor systems for life support</p>
+          </div>
+          <span class="prod-section__count">7 Products</span>
+        </div>
+        <div class="prod-grid">
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#ef4444;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips HeartStart XL</h4>
+              <p>Compact, lightweight defibrillator/monitor with Manual and AED capabilities. Features SMART Biphasic waveform, ECG monitoring, synchronized cardioversion, optional pacing and SpO2.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#ef4444;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips HeartStart XL+</h4>
+              <p>Lightweight portable defibrillator and monitor with four modes: Monitor, Manual Defibrillation, AED, and Pacer. Powered by rechargeable lithium-ion battery.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#ef4444;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Philips</span></div>
+              <h4>Philips Efficia DFM100</h4>
+              <p>Affordable defibrillator/monitor designed to meet demands of pre-hospital and hospital patient care. Adapts to changes in clinical environment and critical care guidelines.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#dc2626;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">ZOLL</span></div>
+              <h4>ZOLL M Series Defibrillator</h4>
+              <p>Defibrillator/monitor designed for pre-hospital and hospital environments. Adaptable to changes in clinical environment and resource needs.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#b91c1c;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Physio-Control</span></div>
+              <h4>LIFEPAK 9 Defibrillator</h4>
+              <p>Simple 1-2-3 operation with user-friendly display. Compact, portable, space-saving design that revolutionizes in-hospital defibrillation.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#b91c1c;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Physio-Control</span></div>
+              <h4>LIFEPAK 10 Defibrillator</h4>
+              <p>Lightweight portable defibrillator monitor with built-in recorder. Primarily used in ambulances and emergency rooms. Available in models 10, 10P (pacing), and 10C.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="defibrillators">
+            <div class="prod-card__img" style="--pc:#b91c1c;"><i class="fas fa-bolt"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Physio-Control</span></div>
+              <h4>LIFEPAK 20 Defibrillator</h4>
+              <p>Handheld defibrillator/monitor with manual and AED modes, up to 360J energy, synchronous cardioversion, pacing, and semi-automatic defibrillation with Shock Advisory System.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── IABP ───────────────────────────── -->
+      <section class="prod-section" id="iabp" data-section="iabp">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#f59e0b;"><i class="fas fa-heart"></i></div>
+          <div>
+            <h2>IABP Machines</h2>
+            <p>Intra-aortic balloon pump systems for cardiac support</p>
+          </div>
+          <span class="prod-section__count">2 Products</span>
+        </div>
+        <div class="prod-grid prod-grid--2col">
+
+          <div class="prod-card" data-cat="iabp">
+            <div class="prod-card__img" style="--pc:#f59e0b;"><i class="fas fa-heart"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Maquet</span></div>
+              <h4>Maquet CS100 IABP</h4>
+              <p>Features Intellisync with one-button start-up, automatically adapting to changing patient conditions. Automatically evaluates and selects optimal trigger source and lead.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="iabp">
+            <div class="prod-card__img" style="--pc:#f59e0b;"><i class="fas fa-heart"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">Maquet</span></div>
+              <h4>Maquet CS300 IABP</h4>
+              <p>Combines fiber-optic speed with IntelliSense and automatic in vivo calibration. Faster time to therapy, faster signal acquisition and faster adaptation to rate and rhythm changes.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── LAPAROSCOPY ────────────────────── -->
+      <section class="prod-section" id="laparoscopy" data-section="laparoscopy">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#8b5cf6;"><i class="fas fa-microscope"></i></div>
+          <div>
+            <h2>Laparoscopy Systems</h2>
+            <p>High-definition laparoscopy and minimally invasive surgery systems</p>
+          </div>
+          <span class="prod-section__count">7 Products</span>
+        </div>
+        <div class="prod-grid">
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#8b5cf6;"><i class="fas fa-microscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">MGB</span></div>
+              <h4>MGB IRIS 4K Laparoscopy</h4>
+              <p>Cutting-edge 4K resolution laparoscopy machine offering exceptional clarity and precision, enabling better diagnosis and treatment during laparoscopic procedures.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#8b5cf6;"><i class="fas fa-microscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">MGB</span></div>
+              <h4>MGB 4-in-1 Laparoscopy</h4>
+              <p>Advanced 4K visualization system for laparoscopic procedures with exceptional clarity enabling better surgical diagnosis and precision treatment.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#8b5cf6;"><i class="fas fa-microscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">MGB</span></div>
+              <h4>MGB CO2 Insufflator</h4>
+              <p>Advanced medical device for minimally invasive surgeries delivering precise and controlled carbon dioxide gas into the body cavity for a clear operating space.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#8b5cf6;"><i class="fas fa-microscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">MGB</span></div>
+              <h4>MGB ARISTO-V1 Laparoscopy</h4>
+              <p>Advanced system for minimally invasive procedures with cutting-edge imaging, HD displays and precise robotic instruments for complex laparoscopic surgeries.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#7c3aed;"><i class="fas fa-lightbulb"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">MGB</span></div>
+              <h4>MGB LED Light Source</h4>
+              <p>300 Watt Xenon light source (MGB ML-L) with integrated emergency halogen backup lamp providing natural illumination for surgical procedures.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#7c3aed;"><i class="fas fa-microscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">G-MED</span></div>
+              <h4>G-MED FHD Laparoscopy System</h4>
+              <p>Full High-Definition imaging system for minimally invasive surgeries. Enhances precision, efficiency and patient outcomes — a valuable tool for modern healthcare facilities.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="laparoscopy">
+            <div class="prod-card__img" style="--pc:#7c3aed;"><i class="fas fa-microscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span><span class="badge badge--brand">G-MED</span></div>
+              <h4>G-MED Laparoscopy System</h4>
+              <p>Cutting-edge system with HD imaging, precise maneuverability and versatile instruments. Empowers surgeons for laparoscopic procedures with exceptional efficiency and safety.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── PUMPS ──────────────────────────── -->
+      <section class="prod-section" id="pumps" data-section="pumps">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#06b6d4;"><i class="fas fa-syringe"></i></div>
+          <div>
+            <h2>Syringe &amp; Infusion Pumps</h2>
+            <p>Precision drug delivery pumps — Authorized Enmind Dealer</p>
+          </div>
+          <span class="prod-section__count">2 Products</span>
+        </div>
+        <div class="prod-grid prod-grid--2col">
+
+          <div class="prod-card" data-cat="pumps">
+            <div class="prod-card__img" style="--pc:#06b6d4;"><i class="fas fa-syringe"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--new">New</span><span class="badge badge--auth">Authorised Dealer</span></div>
+              <h4>Enmind EN-S3 Syringe Pump</h4>
+              <p>Very popular high-quality smart syringe pump used worldwide by experts in hospitals and diagnostics. Precision delivery with reliable performance.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="pumps">
+            <div class="prod-card__img" style="--pc:#06b6d4;"><i class="fas fa-syringe"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--new">New</span><span class="badge badge--auth">Authorised Dealer</span></div>
+              <h4>Enmind EN-V3 Infusion Pump</h4>
+              <p>Compact infusion pump designed with ENMIND technology for precision IV delivery. Features compact design for easy portability for veterinary and clinical care.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── ACCESSORIES ────────────────────── -->
+      <section class="prod-section" id="accessories" data-section="accessories">
+        <div class="prod-section__header">
+          <div class="prod-section__icon" style="--sc:#64748b;"><i class="fas fa-plug"></i></div>
+          <div>
+            <h2>Accessories &amp; Consumables</h2>
+            <p>Essential patient monitoring accessories and cables</p>
+          </div>
+          <span class="prod-section__count">6 Products</span>
+        </div>
+        <div class="prod-grid">
+
+          <div class="prod-card" data-cat="accessories">
+            <div class="prod-card__img" style="--pc:#64748b;"><i class="fas fa-plug"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span></div>
+              <h4>IBP Cables</h4>
+              <p>Invasive blood pressure monitoring cables using sensitive IV catheter for arterial measurement. Used where rapid variations in blood pressure are anticipated.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="accessories">
+            <div class="prod-card__img" style="--pc:#64748b;"><i class="fas fa-wave-square"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span></div>
+              <h4>ECG Cables</h4>
+              <p>Vital ECG lead wire cables with specialized connectors enabling transmission of electrical signals from the body to the ECG device. Compatible with major monitor brands.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="accessories">
+            <div class="prod-card__img" style="--pc:#64748b;"><i class="fas fa-stethoscope"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span></div>
+              <h4>B.P Cuff</h4>
+              <p>Durable fabric blood pressure cuff with inflatable bladder for accurate patient BP measurement. Wrapped around upper arm, connected to pressure gauge or electronic monitor.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="accessories">
+            <div class="prod-card__img" style="--pc:#64748b;"><i class="fas fa-circle-dot"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span></div>
+              <h4>SpO2 Probe</h4>
+              <p>Non-invasive probe for measuring oxygen saturation levels. Attaches to finger, toe, or earlobe — emits and detects light to determine oxygen saturation accurately.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="accessories">
+            <div class="prod-card__img" style="--pc:#64748b;"><i class="fas fa-ruler-horizontal"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span></div>
+              <h4>NIBP Hose Pipe</h4>
+              <p>Flexible hose connecting blood pressure cuff to monitoring device for accurate real-time non-invasive blood pressure (NIBP) measurements.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="prod-card" data-cat="accessories">
+            <div class="prod-card__img" style="--pc:#64748b;"><i class="fas fa-thermometer-half"></i></div>
+            <div class="prod-card__body">
+              <div class="prod-card__badges"><span class="badge badge--refurb">Refurbished</span></div>
+              <h4>Temperature Probe</h4>
+              <p>Compact electronic sensor for accurate temperature measurement. Used in clinical, scientific and industrial applications for reliable patient temperature monitoring.</p>
+              <a href="index.html#contact" class="prod-enquire-btn">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container cta-band__inner">
+      <div>
+        <h2>Can't find what you're looking for?</h2>
+        <p>We have additional inventory not listed here. Contact us with your requirements and we'll source it for you.</p>
+      </div>
+      <a href="index.html#contact" class="btn btn--primary btn--lg">
+        <i class="fas fa-headset"></i> Contact Our Team
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container footer__grid">
+        <div class="footer-col footer-col--brand">
+          <div class="navbar__logo" style="margin-bottom: 1rem;">
+            <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="logo-text">
+              <div style="line-height:1.1;"><span class="logo-primary">Bharti</span> <span class="logo-accent">Medical</span></div>
+              <div style="font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:700;">Corporation</div>
+            </div>
+          </div>
+          <p>Your trusted partner for medical equipment since 2000. Committed to improving healthcare through quality products and exceptional service.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Product Categories</h4>
+          <ul>
+            <li><a href="#ventilators">Ventilators</a></li>
+            <li><a href="#monitors">Patient Monitors</a></li>
+            <li><a href="#anesthesia">Anesthesia Machines</a></li>
+            <li><a href="#defibrillators">Defibrillators</a></li>
+            <li><a href="#laparoscopy">Laparoscopy Systems</a></li>
+            <li><a href="#pumps">Syringe &amp; Infusion Pumps</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> RZD-1/295C, Gali No. 5,<br />Mahavir Enclave, New Delhi – 110045</li>
+            <li><i class="fas fa-phone-alt"></i> +91 88269 14364</li>
+            <li><i class="fas fa-envelope"></i> bmcorpdelhi@gmail.com</li>
+            <li><i class="fas fa-clock"></i> Mon–Sat: 9:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2024 Bharti Medical Corporation. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
+</body>
+</html>
